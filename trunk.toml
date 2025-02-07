@@ -1,0 +1,3 @@
+[build]
+public_url = "https://tntnolik.github.io/role-generator/"
+dist = "docs" 
