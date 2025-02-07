@@ -1,0 +1,11 @@
+[package]
+name = "role-generator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+yew = {version = "*", features = ['csr']}
+web-sys = {version = "*"}
+gloo-storage = "*"
+serde = {version = "*", features = ['derive']}
+rand = "0.8.5"
