@@ -145,12 +145,12 @@ fn App() -> Html {
         let players_input = players_input.clone();
         let mut retern_list = Vec::new();
 
-        let players = match players_input.parse::<u128>() {
+        let players = match players_input.trim().parse::<u128>() {
             Ok(v) => (1..=v).map(|i| format!("{}", i)).collect::<Vec<String>>(),
             Err(_) => players_input.split_whitespace().map(|v| v.to_string()).collect::<Vec<String>>()
         };
 
-        let mut roles = match roles_input.parse::<u128>() {
+        let mut roles = match roles_input.trim().parse::<u128>() {
             Ok(v) => (1..=v).map(|i| format!("{}", i)).collect::<Vec<String>>(),
             Err(_) => roles_input.split_whitespace().map(|v| v.to_string()).collect::<Vec<String>>()
         };
