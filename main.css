@@ -1,3 +1,19 @@
+:root {
+    --bg: #f7f7f7;
+    --bgc: #fff;
+    --text: #333;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+    --bg: #131420;
+    --bgc: #1a1a24;
+    --text: #d7d7d7;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,16 +22,16 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #f7f7f7;
-    color: #333;
+    background: var(--bg);
+    color: var(--text);
     padding: 20px;
 }
 .container {
     width: min(800px, 90%);
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var(--bgc);
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
     padding: 20px;
 }
 

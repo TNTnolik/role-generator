@@ -849,6 +849,7 @@ dependencies = [
 name = "role-generator"
 version = "0.1.0"
 dependencies = [
+ "gloo 0.8.1",
  "gloo-storage 0.3.0",
  "rand",
  "serde",
