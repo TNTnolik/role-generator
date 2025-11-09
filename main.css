@@ -25,6 +25,7 @@ body {
     background: var(--bg);
     color: var(--text);
     padding: 20px;
+    transition: background 0.3s, color 0.3s;
 }
 .container {
     width: min(800px, 90%);
