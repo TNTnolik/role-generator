@@ -34,6 +34,7 @@ body {
     border-radius: 8px;
     box-shadow: var(--shadow);
     padding: 20px;
+    transition: background 0.3s, color 0.3s;
 }
 
 .container p {
