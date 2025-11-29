@@ -187,6 +187,9 @@ pub fn App() -> Html {
     html! {
         <div class="container">
             <h1>{"Генератор ролей"}</h1>
+            <button class="theme"  onclick={toggle_theme} >
+                {if theme==Theme::Dark {"Светлая"}else{"Тёмная"}}
+            </button>
             <p>{"Настройте параметры, введите данные и сгенерируйте роли."}</p>
 
             <div class="settings">
@@ -202,9 +205,6 @@ pub fn App() -> Html {
                 <button class="load" onclick={load_settings}>{"Загрузить"}</button>
                 <button class="save" onclick={save_settings}>{"Сохранить"}</button>
                 <button class="delete" onclick={delete_settings}>{"Удалить"}</button>
-                <button class="theme"  onclick={toggle_theme} >
-                    {if theme==Theme::Dark {"Светлая"}else{"Тёмная"}}
-                </button>
             </div>
 
             <div class="input-block">
